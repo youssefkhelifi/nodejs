@@ -9,7 +9,7 @@ app.set('view engine', 'pug');
 app.set('views','./views');
 const port=9000;
 
-/*const myLogger = function (req, res, next) {
+const myLogger = function (req, res, next) {
     if(hours<9||hours>23||day.toString()==='Sunday'||day.toString()==='Saturday')
     {
         res.status(400).send('error')
@@ -18,7 +18,7 @@ const port=9000;
   }
   
   app.use(myLogger);
-*/
+
 
 //Simple request time logger
 app.use(express.static(path.join(__dirname, './public')));
